@@ -3,16 +3,53 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
 
 .headerSection{
-  height: 100vh;
-  background: url('headerbg.jpg');
+  max-height: 100vh;
+  background: url('headerbg.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
+
+  width: 100vw;
+  position: absolute;
+
 }
 
 .filter{
-  background: linear-gradient(blue, pink);
+  background: linear-gradient(#60A0D8, #B2D234);
   opacity: 0.5;
   height: 100vh;
+  position: relative;
+
+
+}
+
+.welcome{
+  background-color: #B2D234;
+  bottom: 60vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+ 
+  position: relative;
+
+
+  h1{
+    font-size: 126px;
+    margin: auto;
+    color: #FFFF;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+  }
+  h2{
+
+    transform: rotate(-9deg);
+    color: white;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    font-size: 54px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+  }
 }
