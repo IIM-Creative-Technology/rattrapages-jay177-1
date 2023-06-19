@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerSection {
+  height: 100vh;
+  background: url("headerbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.filter {
+  background: linear-gradient(blue, pink);
+  opacity: 0.5;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=output.css.map */
