@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +10,6 @@
   background: url("headerbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
-  position: absolute;
 }
 
 .header {
@@ -65,6 +63,59 @@
   font-size: 54px;
   font-family: "Poppins", sans-serif;
   font-style: italic;
+}
+
+.welcomeSection {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  background: url("welcomesection.png");
+}
+@media screen and (max-width: 900px) {
+  .welcomeSection .bgimg {
+    display: none;
+  }
+}
+.welcomeSection .bgimg {
+  width: 100vh;
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  z-index: 0;
+  background: url("salade-detoure.png");
+  background-position: 70px 10px;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+.welcomeSection .intro {
+  z-index: 2;
+  position: relative;
+  margin-top: 20vh;
+  margin-left: 15vh;
+}
+.welcomeSection .intro .Pzone {
+  max-width: 476px;
+  width: 34vw;
+}
+.welcomeSection .intro h2 {
+  color: #B2D234;
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2vh;
+}
+.welcomeSection .intro p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 4vh;
+}
+.welcomeSection .intro button {
+  margin-top: 5vh;
+  border: none;
+  border-radius: 8px;
+  height: 5vh;
+  width: 20vh;
+  background-color: #B2D234;
+  color: white;
 }
 
 /*# sourceMappingURL=output.css.map */
