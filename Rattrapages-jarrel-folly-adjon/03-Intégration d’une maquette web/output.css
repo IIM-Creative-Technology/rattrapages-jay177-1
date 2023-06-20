@@ -118,4 +118,49 @@
   color: white;
 }
 
+.AccrocheSection {
+  height: 100vh;
+  background: url("blackSalad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.AccrocheSection .AccrocheDiv {
+  height: 80vh;
+  width: 75vh;
+  background-color: rgba(178, 210, 52, 0.85);
+  margin-right: 12vw;
+  display: flex;
+  text-align: center;
+  color: white;
+  justify-content: center;
+}
+.AccrocheSection .AccrocheDiv .AccrocheTxtZone {
+  width: 40vw;
+}
+.AccrocheSection .AccrocheDiv h2 {
+  margin-bottom: 5vh;
+  margin-top: 7vh;
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+}
+.AccrocheSection .AccrocheDiv p {
+  margin-bottom: 3vh;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.AccrocheSection .AccrocheDiv button {
+  margin-top: 2vh;
+  width: 15vw;
+  height: 7vh;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: #B2D234;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
 /*# sourceMappingURL=output.css.map */

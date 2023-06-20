@@ -132,3 +132,52 @@
     
   }
 }
+
+.AccrocheSection{
+  height: 100vh;
+  background: url("blackSalad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+  .AccrocheDiv{
+    height: 80vh;
+    width: 75vh;
+    background-color: rgba(178, 210, 52, 0.85);
+    margin-right: 12vw;
+    display: flex;
+    text-align: center;
+    color: #FFFF;
+    
+    justify-content: center;
+    .AccrocheTxtZone{
+      width: 40vw;
+
+    }
+    h2{
+      margin-bottom: 5vh;
+      margin-top: 7vh;
+      font-size: 52px;
+      font-family: 'Poppins', sans-serif;
+      
+    }
+    p{
+      margin-bottom: 3vh;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+    }
+    button{
+      margin-top: 2vh;
+      width: 15vw;
+      height: 7vh;
+      border: none;
+      border-radius: 8px;
+      background-color: #FFFF;
+      color: #B2D234;
+      font-size: 24px;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+}
