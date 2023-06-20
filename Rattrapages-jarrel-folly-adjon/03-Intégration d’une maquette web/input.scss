@@ -181,3 +181,53 @@
     }
   }
 }
+
+.MenuSection{
+
+  height: 140vh;
+  .MenuIntro{
+    margin: auto;
+    text-align: center;
+    width: 60vw;
+    h2{
+      margin-bottom: 3vh;
+      font-size: 52px;
+      font-family: 'Poppins', sans-serif;
+      color: #B2D234;
+    }
+    p{
+      margin-top: 2vh;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+  
+  .Produit{
+   
+    width: 40vw;
+    margin-left: 12vw;
+    margin-top: 8vh;
+    
+
+    .ProductName{
+      display: flex;
+      gap: 10vw;
+      margin-bottom: 3vh;
+      color: #B2D234;
+      font-size: 24px;
+      font-family: 'Poppins', sans-serif;
+      
+
+    }
+
+    .description{
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .name{
+      width: 17vw;
+    
+    }
+  }
+}
+
