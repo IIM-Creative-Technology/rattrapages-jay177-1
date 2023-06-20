@@ -45,7 +45,6 @@
 }
 
 .welcome{
-  background-color: #B2D234;
   bottom: 45vh;
   margin-left: 25vw;
   margin-right: 25vw;
@@ -55,6 +54,7 @@
 
 
   h1{
+    text-align: center;
     font-size: 126px;
     margin: auto;
     color: #FFFF;
@@ -185,11 +185,13 @@
 .MenuSection{
 
   height: 140vh;
+  background: url("pattern.png");
   .MenuIntro{
     margin: auto;
     text-align: center;
     width: 60vw;
     h2{
+      padding-top: 10vh;
       margin-bottom: 3vh;
       font-size: 52px;
       font-family: 'Poppins', sans-serif;
@@ -200,6 +202,10 @@
       font-size: 18px;
       font-family: 'Poppins', sans-serif;
     }
+  }
+
+  .MenuCommande{
+    display: flex;
   }
   
   .Produit{
@@ -227,6 +233,45 @@
     .name{
       width: 17vw;
     
+    }
+  }
+  .vert{
+    transform: rotate(-9deg);
+    color: #B2D234;
+
+  }
+  .bleu{
+    transform: rotate(-9deg);
+    color: #60A0D8;
+  }
+ 
+  .commande{
+    margin-top: 20vh;
+    height: 70vh;
+    max-width: 31vw;
+   
+    h2{
+      font-size: 64px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      margin-bottom: 10vh;
+    }
+    p{
+      margin-top: 10vh;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      
+    }
+    button{
+    margin-top: 20%;
+     width: 80%;
+     height: 8%;
+     border: none;
+     border-radius: 8px;
+     background: #B2D234;
+     color: #FFFF;
+     margin-left: 10%;
     }
   }
 }
