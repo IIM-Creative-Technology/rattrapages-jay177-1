@@ -1,71 +1,68 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-.headerSection{
+.headerSection {
   max-height: 100vh;
-  background: url('headerbg.jpg') ;
+  background: url('headerbg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-
-
-
-
 }
-.header{
+
+.header {
   margin-top: 1.8vh;
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
-  color: #FFFF;
-  justify-content: end;
+  color: #fff;
+  justify-content: flex-end;
   display: flex;
   gap: 3.6vw;
   margin-right: 3.6vw;
-  img{
+
+  img {
     margin-right: 23vw;
   }
-  button{
+
+  button {
     width: 12vw;
     height: 5vh;
-    color: #B2D234;
+    color: #b2d234;
     border-radius: 9px;
     border: 1px;
   }
+
   position: relative;
   bottom: 100vh;
 }
 
-.filter{
-  background: linear-gradient(#60A0D8, #B2D234);
+.filter {
+  background: linear-gradient(#60a0d8, #b2d234);
   opacity: 0.5;
   height: 100vh;
   position: relative;
-
-
 }
 
-.welcome{
+.welcome {
   bottom: 45vh;
   margin-left: 25vw;
   margin-right: 25vw;
   min-width: 50vw;
- 
   position: absolute;
 
-
-  h1{
+  h1 {
     text-align: center;
     font-size: 126px;
     margin: auto;
-    color: #FFFF;
+    color: #fff;
     opacity: 1;
     font-family: 'Poppins', sans-serif;
   }
-  p{
 
+  p {
     transform: rotate(-9deg);
     color: white;
     opacity: 1;
@@ -77,18 +74,19 @@
   }
 }
 
-.welcomeSection{
+.welcomeSection {
   position: relative;
-  
   height: 100vh;
   display: flex;
   background: url("welcomesection.png");
+
   @media screen and (max-width: 900px) {
-      .bgimg{
-        display: none;
-      }
+    .bgimg {
+      display: none;
+    }
   }
-  .bgimg{
+
+  .bgimg {
     width: 100vh;
     position: absolute;
     height: 100vh;
@@ -98,209 +96,293 @@
     background-position: 70px 10px;
     background-size: 110%;
     background-repeat: no-repeat;
-   
-   
   }
-  .intro{
+
+  .intro {
     z-index: 2;
     position: relative;
     margin-top: 20vh;
     margin-left: 15vh;
 
-    .Pzone{
+    .Pzone {
       max-width: 476px;
       width: 34vw;
     }
-    h2{
-      color: #B2D234;
+
+    h2 {
+      color: #b2d234;
       font-size: 54px;
       font-family: 'Poppins', sans-serif;
       margin-bottom: 2vh;
     }
-    p{
+
+    p {
       font-size: 18px;
       font-family: 'Poppins', sans-serif;
       margin-top: 4vh;
-      
     }
-    button{
+
+    button {
       margin-top: 5vh;
       border: none;
       border-radius: 8px;
       height: 5vh;
       width: 20vh;
-      background-color: #B2D234;
-      color: #FFFF;
+      background-color: #b2d234;
+      color: #fff;
     }
-    
+  }
+}
+@media screen and (max-width: 900px) {
+  .welcomeSection {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    .intro{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      .Pzone{
+        text-align: center;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+      }
+    }
   }
 }
 
-.AccrocheSection{
+.AccrocheSection {
   height: 100vh;
   background: url("blackSalad.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: end;
-  
-  .AccrocheDiv{
+  justify-content: flex-end;
+
+  .AccrocheDiv {
     height: 80vh;
     width: 75vh;
     background-color: rgba(178, 210, 52, 0.85);
     margin-right: 12vw;
     display: flex;
     text-align: center;
-    color: #FFFF;
-    
+    color: #fff;
     justify-content: center;
-    .AccrocheTxtZone{
-      width: 40vw;
 
+    .AccrocheTxtZone {
+      width: 40vw;
     }
-    h2{
+
+    h2 {
       margin-bottom: 5vh;
       margin-top: 7vh;
       padding-left: 10px;
       padding-right: 10px;
       font-size: 52px;
       font-family: 'Poppins', sans-serif;
-      
     }
-    p{
+
+    p {
       margin-bottom: 3vh;
       font-size: 18px;
       font-family: 'Poppins', sans-serif;
     }
-    button{
+
+    button {
       margin-top: 2vh;
       width: 15vw;
       height: 7vh;
       border: none;
       border-radius: 8px;
-      background-color: #FFFF;
-      color: #B2D234;
+      background-color: #fff;
+      color: #b2d234;
       font-size: 24px;
       font-family: 'Poppins', sans-serif;
     }
   }
 }
 
-.MenuSection{
+@media screen and (max-width: 900px) {
+  .AccrocheSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 130vh;
+    .AccrocheDiv{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 90vh;
+      padding-bottom: 4vh;
+      
+      
+      
+    }
+ 
+  }
+  
+}
 
-  height: 140vh;
+.MenuSection {
+  height: auto;
+  
   background: url("pattern.png");
-  .MenuIntro{
+
+  .MenuIntro {
     margin: auto;
     text-align: center;
     width: 60vw;
-    h2{
+
+    h2 {
       padding-top: 10vh;
       margin-bottom: 3vh;
       font-size: 52px;
       font-family: 'Poppins', sans-serif;
-      color: #B2D234;
+      color: #b2d234;
     }
-    p{
+
+    p {
       margin-top: 2vh;
       font-size: 18px;
       font-family: 'Poppins', sans-serif;
     }
+
+    @media screen and (max-width: 1100px) {
+      h2 {
+        font-size: 32px;
+      }
+    }
   }
 
-  .MenuCommande{
+  .MenuCommande {
     display: flex;
   }
-  @media screen and (max-width: 900px) {
-    .MenuCommande{
-      display: block;
 
-    }
-    .ProductName{
+  @media screen and (max-width: 900px) {
+   
+
+    .ProductName {
       font-size: 18px;
     }
-}
-  
-  .Produit{
-   
+  }
+
+  .Produit {
     width: 40vw;
     margin-left: 12vw;
     margin-top: 8vh;
-    
 
-    .ProductName{
+    .ProductName {
       display: flex;
       gap: 10vw;
       margin-bottom: 3vh;
-      color: #B2D234;
-      font-size: 24px;
+      color: #b2d234;
       font-family: 'Poppins', sans-serif;
-      
-
     }
 
-    .description{
+    .description {
       font-size: 18px;
       font-family: 'Poppins', sans-serif;
     }
-    .name{
+
+    @media screen and (max-width: 1100px) {
+      .description {
+        font-size: 12px;
+      }
+    }
+
+    .name {
       width: 17vw;
-    
     }
   }
-  .vert{
-    transform: rotate(-9deg);
-    color: #B2D234;
 
-  }
-  .bleu{
+  .vert {
     transform: rotate(-9deg);
-    color: #60A0D8;
+    color: #b2d234;
   }
- 
-  .commande{
+
+  .bleu {
+    transform: rotate(-9deg);
+    color: #60a0d8;
+  }
+
+  .commande {
     margin-top: 20vh;
     height: 70vh;
     max-width: 31vw;
-   
-    h2{
+
+    h2 {
       font-size: 64px;
       font-family: 'Poppins', sans-serif;
       font-style: italic;
       margin-bottom: 10vh;
     }
-    p{
+
+    p {
       margin-top: 10vh;
       font-size: 18px;
       font-family: 'Poppins', sans-serif;
       text-align: center;
-      
     }
-    button{
-    margin-top: 20%;
-     width: 80%;
-     height: 8%;
-     border: none;
-     border-radius: 8px;
-     background: #B2D234;
-     color: #FFFF;
-     margin-left: 10%;
+
+    button {
+      margin-top: 20%;
+      width: 80%;
+      height: 8%;
+      border: none;
+      border-radius: 8px;
+      background: #b2d234;
+      color: #fff;
+      margin-left: 10%;
     }
   }
 }
-.prepaSection{
+@media screen and (max-width: 900px) {
+  .MenuSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 50vh;
+    .Produit{
+      margin-left: 0;
+    }
+   
+  }
+  .MenuCommande{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .ProductDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+}
+
+.prepaSection {
   background: url("prep.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 100vh;
+  height: auto;
   align-items: center;
   justify-content: center;
-  color: #FFFF;
+  color: #fff;
   gap: 5vw;
 
-  .TxtDiv{
+  .TxtDiv {
     margin-top: 10%;
     display: flex;
     justify-content: center;
@@ -308,75 +390,81 @@
     gap: 15%;
   }
 
-  .greenTeam{
+  .greenTeam {
     height: 60vh;
     width: 45vw;
-    background: #B2D234;
-    
+    background: #b2d234;
+  }
 
-  }
-  .blueTeam{
+  .blueTeam {
     height: 60vh;
     width: 45vw;
-    background: #60A0D8;
+    background: #60a0d8;
   }
-   h2{
-      margin-top:7%;
-      width: 100%;
-      text-align: center;
-      font-size: 52px;
-      font-family: 'Poppins', sans-serif;
-    }
-    p{
-      flex: 50%;
-      text-align: center;
-      font-size: 18px;
-      font-family: 'Poppins', sans-serif;
-  
-    }
+
+  h2 {
+    margin-top: 7%;
+    width: 100%;
+    text-align: center;
+    font-size: 52px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  p {
+    flex: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
 }
 
-.formSection{
+@media screen and (max-width: 900px) {
+  .prepaSection {
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+
+.formSection {
   gap: 5vw;
   justify-content: center;
   align-items: center;
   display: flex;
   height: 100vh;
+  background: url("welcomesection.png");
 
-  .formImg{
-    background-color: blue;
-    height: 65vh;
-    width: 35vw;
-  }
 
-  .form{
+  .form {
     height: 80vh;
     width: 50vw;
-   
-    label{
-      color: #B2D234;
+
+    label {
+      color: #b2d234;
       font-size: 23px;
       font-family: 'Poppins', sans-serif;
       font-style: italic;
       margin-bottom: 2vh;
       display: block;
     }
-    input{
-      border: solid 1px rgba(78, 78, 78, 0.30);
+
+    input {
+      border: solid 1px rgba(78, 78, 78, 0.3);
     }
-    
-    .formHeadline{
+
+    .formHeadline {
       text-align: center;
       width: 65%;
       margin-left: 17.5%;
 
-      h2{
+      h2 {
         color: rgba(178, 210, 52, 0.85);
         font-size: 52px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 3vh;
       }
-      p{
+
+      p {
         margin-left: 10%;
         width: 80%;
         font-size: 18px;
@@ -385,53 +473,55 @@
       }
     }
 
-    .nameFirstname{
+    .nameFirstname {
       gap: 2vw;
       display: flex;
 
-      input{
+      input {
         width: 24vw;
         height: 5vh;
       }
-
-      
-
     }
-    .Sform{
 
-      input{
+    .Sform {
+      input {
         width: 100%;
       }
 
-      .email{
-        input{
+      .email {
+        input {
           height: 5vh;
         }
       }
-      .msg{
-        input{
+
+      .msg {
+        input {
           height: 15vh;
         }
       }
     }
-    button{
+
+    button {
       width: 30%;
       height: 6vh;
       margin-left: 35%;
-      background-color: #B2D234;
-      color: #FFFF;
+      background-color: #b2d234;
+      color: #fff;
       border: none;
       border-radius: 8px;
-      margin-top: 4vh;
+      font-size: 24px;
+      font-family: 'Poppins', sans-serif;
     }
   }
-  .formImg{
-    img{
-      width: 100%;
-      
-    }
- 
-    
-
+  
+}
+@media screen and (max-width: 900px) {
+  .formSection {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
 }
+
+

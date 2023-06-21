@@ -16,8 +16,8 @@
   margin-top: 1.8vh;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
-  color: white;
-  justify-content: end;
+  color: #fff;
+  justify-content: flex-end;
   display: flex;
   gap: 3.6vw;
   margin-right: 3.6vw;
@@ -30,13 +30,13 @@
 .header button {
   width: 12vw;
   height: 5vh;
-  color: #B2D234;
+  color: #b2d234;
   border-radius: 9px;
   border: 1px;
 }
 
 .filter {
-  background: linear-gradient(#60A0D8, #B2D234);
+  background: linear-gradient(#60a0d8, #b2d234);
   opacity: 0.5;
   height: 100vh;
   position: relative;
@@ -53,7 +53,7 @@
   text-align: center;
   font-size: 126px;
   margin: auto;
-  color: white;
+  color: #fff;
   opacity: 1;
   font-family: "Poppins", sans-serif;
 }
@@ -101,7 +101,7 @@
   width: 34vw;
 }
 .welcomeSection .intro h2 {
-  color: #B2D234;
+  color: #b2d234;
   font-size: 54px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 2vh;
@@ -117,10 +117,31 @@
   border-radius: 8px;
   height: 5vh;
   width: 20vh;
-  background-color: #B2D234;
-  color: white;
+  background-color: #b2d234;
+  color: #fff;
 }
 
+@media screen and (max-width: 900px) {
+  .welcomeSection {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .welcomeSection .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .welcomeSection .intro .Pzone {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .AccrocheSection {
   height: 100vh;
   background: url("blackSalad.png");
@@ -128,7 +149,7 @@
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .AccrocheSection .AccrocheDiv {
   height: 80vh;
@@ -137,7 +158,7 @@
   margin-right: 12vw;
   display: flex;
   text-align: center;
-  color: white;
+  color: #fff;
   justify-content: center;
 }
 .AccrocheSection .AccrocheDiv .AccrocheTxtZone {
@@ -162,14 +183,32 @@
   height: 7vh;
   border: none;
   border-radius: 8px;
-  background-color: white;
-  color: #B2D234;
+  background-color: #fff;
+  color: #b2d234;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+  .AccrocheSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 130vh;
+  }
+  .AccrocheSection .AccrocheDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 90vh;
+    padding-bottom: 4vh;
+  }
+}
 .MenuSection {
-  height: 140vh;
+  height: auto;
   background: url("pattern.png");
 }
 .MenuSection .MenuIntro {
@@ -182,20 +221,22 @@
   margin-bottom: 3vh;
   font-size: 52px;
   font-family: "Poppins", sans-serif;
-  color: #B2D234;
+  color: #b2d234;
 }
 .MenuSection .MenuIntro p {
   margin-top: 2vh;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
+@media screen and (max-width: 1100px) {
+  .MenuSection .MenuIntro h2 {
+    font-size: 32px;
+  }
+}
 .MenuSection .MenuCommande {
   display: flex;
 }
 @media screen and (max-width: 900px) {
-  .MenuSection .MenuCommande {
-    display: block;
-  }
   .MenuSection .ProductName {
     font-size: 18px;
   }
@@ -209,24 +250,28 @@
   display: flex;
   gap: 10vw;
   margin-bottom: 3vh;
-  color: #B2D234;
-  font-size: 24px;
+  color: #b2d234;
   font-family: "Poppins", sans-serif;
 }
 .MenuSection .Produit .description {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
+@media screen and (max-width: 1100px) {
+  .MenuSection .Produit .description {
+    font-size: 12px;
+  }
+}
 .MenuSection .Produit .name {
   width: 17vw;
 }
 .MenuSection .vert {
   transform: rotate(-9deg);
-  color: #B2D234;
+  color: #b2d234;
 }
 .MenuSection .bleu {
   transform: rotate(-9deg);
-  color: #60A0D8;
+  color: #60a0d8;
 }
 .MenuSection .commande {
   margin-top: 20vh;
@@ -251,20 +296,44 @@
   height: 8%;
   border: none;
   border-radius: 8px;
-  background: #B2D234;
-  color: white;
+  background: #b2d234;
+  color: #fff;
   margin-left: 10%;
 }
 
+@media screen and (max-width: 900px) {
+  .MenuSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 50vh;
+  }
+  .MenuSection .Produit {
+    margin-left: 0;
+  }
+  .MenuCommande {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .ProductDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .prepaSection {
   background: url("prep.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 100vh;
+  height: auto;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fff;
   gap: 5vw;
 }
 .prepaSection .TxtDiv {
@@ -277,12 +346,12 @@
 .prepaSection .greenTeam {
   height: 60vh;
   width: 45vw;
-  background: #B2D234;
+  background: #b2d234;
 }
 .prepaSection .blueTeam {
   height: 60vh;
   width: 45vw;
-  background: #60A0D8;
+  background: #60a0d8;
 }
 .prepaSection h2 {
   margin-top: 7%;
@@ -298,24 +367,27 @@
   font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+  .prepaSection {
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
 .formSection {
   gap: 5vw;
   justify-content: center;
   align-items: center;
   display: flex;
   height: 100vh;
-}
-.formSection .formImg {
-  background-color: blue;
-  height: 65vh;
-  width: 35vw;
+  background: url("welcomesection.png");
 }
 .formSection .form {
   height: 80vh;
   width: 50vw;
 }
 .formSection .form label {
-  color: #B2D234;
+  color: #b2d234;
   font-size: 23px;
   font-family: "Poppins", sans-serif;
   font-style: italic;
@@ -364,14 +436,21 @@
   width: 30%;
   height: 6vh;
   margin-left: 35%;
-  background-color: #B2D234;
-  color: white;
+  background-color: #b2d234;
+  color: #fff;
   border: none;
   border-radius: 8px;
-  margin-top: 4vh;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
 }
-.formSection .formImg img {
-  width: 100%;
+
+@media screen and (max-width: 900px) {
+  .formSection {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
