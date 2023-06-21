@@ -19,7 +19,6 @@
   margin-top: 1.8vh;
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
-  font-style: 300;
   color: #FFFF;
   justify-content: end;
   display: flex;
@@ -30,6 +29,10 @@
   }
   button{
     width: 12vw;
+    height: 5vh;
+    color: #B2D234;
+    border-radius: 9px;
+    border: 1px;
   }
   position: relative;
   bottom: 100vh;
@@ -61,7 +64,7 @@
     opacity: 1;
     font-family: 'Poppins', sans-serif;
   }
-  h2{
+  p{
 
     transform: rotate(-9deg);
     color: white;
@@ -333,3 +336,102 @@
     }
 }
 
+.formSection{
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+
+  .formImg{
+    background-color: blue;
+    height: 65vh;
+    width: 35vw;
+  }
+
+  .form{
+    height: 80vh;
+    width: 50vw;
+   
+    label{
+      color: #B2D234;
+      font-size: 23px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      margin-bottom: 2vh;
+      display: block;
+    }
+    input{
+      border: solid 1px rgba(78, 78, 78, 0.30);
+    }
+    
+    .formHeadline{
+      text-align: center;
+      width: 65%;
+      margin-left: 17.5%;
+
+      h2{
+        color: rgba(178, 210, 52, 0.85);
+        font-size: 52px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 3vh;
+      }
+      p{
+        margin-left: 10%;
+        width: 80%;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 2vh;
+      }
+    }
+
+    .nameFirstname{
+      gap: 2vw;
+      display: flex;
+
+      input{
+        width: 24vw;
+        height: 5vh;
+      }
+
+      
+
+    }
+    .Sform{
+
+      input{
+        width: 100%;
+      }
+
+      .email{
+        input{
+          height: 5vh;
+        }
+      }
+      .msg{
+        input{
+          height: 15vh;
+        }
+      }
+    }
+    button{
+      width: 30%;
+      height: 6vh;
+      margin-left: 35%;
+      background-color: #B2D234;
+      color: #FFFF;
+      border: none;
+      border-radius: 8px;
+      margin-top: 4vh;
+    }
+  }
+  .formImg{
+    img{
+      width: 100%;
+      
+    }
+ 
+    
+
+  }
+}

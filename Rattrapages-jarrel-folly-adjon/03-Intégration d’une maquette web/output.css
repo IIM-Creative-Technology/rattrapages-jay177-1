@@ -16,7 +16,6 @@
   margin-top: 1.8vh;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
-  font-style: 300;
   color: white;
   justify-content: end;
   display: flex;
@@ -30,6 +29,10 @@
 }
 .header button {
   width: 12vw;
+  height: 5vh;
+  color: #B2D234;
+  border-radius: 9px;
+  border: 1px;
 }
 
 .filter {
@@ -54,7 +57,7 @@
   opacity: 1;
   font-family: "Poppins", sans-serif;
 }
-.welcome h2 {
+.welcome p {
   transform: rotate(-9deg);
   color: white;
   opacity: 1;
@@ -293,6 +296,82 @@
   text-align: center;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
+}
+
+.formSection {
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+.formSection .formImg {
+  background-color: blue;
+  height: 65vh;
+  width: 35vw;
+}
+.formSection .form {
+  height: 80vh;
+  width: 50vw;
+}
+.formSection .form label {
+  color: #B2D234;
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  margin-bottom: 2vh;
+  display: block;
+}
+.formSection .form input {
+  border: solid 1px rgba(78, 78, 78, 0.3);
+}
+.formSection .form .formHeadline {
+  text-align: center;
+  width: 65%;
+  margin-left: 17.5%;
+}
+.formSection .form .formHeadline h2 {
+  color: rgba(178, 210, 52, 0.85);
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 3vh;
+}
+.formSection .form .formHeadline p {
+  margin-left: 10%;
+  width: 80%;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2vh;
+}
+.formSection .form .nameFirstname {
+  gap: 2vw;
+  display: flex;
+}
+.formSection .form .nameFirstname input {
+  width: 24vw;
+  height: 5vh;
+}
+.formSection .form .Sform input {
+  width: 100%;
+}
+.formSection .form .Sform .email input {
+  height: 5vh;
+}
+.formSection .form .Sform .msg input {
+  height: 15vh;
+}
+.formSection .form button {
+  width: 30%;
+  height: 6vh;
+  margin-left: 35%;
+  background-color: #B2D234;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 4vh;
+}
+.formSection .formImg img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=output.css.map */
