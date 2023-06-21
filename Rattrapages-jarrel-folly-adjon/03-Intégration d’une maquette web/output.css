@@ -143,6 +143,8 @@
 .AccrocheSection .AccrocheDiv h2 {
   margin-bottom: 5vh;
   margin-top: 7vh;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 52px;
   font-family: "Poppins", sans-serif;
 }
@@ -186,6 +188,14 @@
 }
 .MenuSection .MenuCommande {
   display: flex;
+}
+@media screen and (max-width: 900px) {
+  .MenuSection .MenuCommande {
+    display: block;
+  }
+  .MenuSection .ProductName {
+    font-size: 18px;
+  }
 }
 .MenuSection .Produit {
   width: 40vw;
@@ -241,6 +251,48 @@
   background: #B2D234;
   color: white;
   margin-left: 10%;
+}
+
+.prepaSection {
+  background: url("prep.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 5vw;
+}
+.prepaSection .TxtDiv {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+.prepaSection .greenTeam {
+  height: 60vh;
+  width: 45vw;
+  background: #B2D234;
+}
+.prepaSection .blueTeam {
+  height: 60vh;
+  width: 45vw;
+  background: #60A0D8;
+}
+.prepaSection h2 {
+  margin-top: 7%;
+  width: 100%;
+  text-align: center;
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+}
+.prepaSection p {
+  flex: 50%;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=output.css.map */
