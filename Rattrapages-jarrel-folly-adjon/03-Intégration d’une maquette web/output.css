@@ -12,6 +12,12 @@
   background-repeat: no-repeat;
 }
 
+.social img {
+  position: relative;
+  bottom: 18vh;
+  left: 88vw;
+}
+
 .header {
   margin-top: 1.8vh;
   font-size: 18px;
@@ -33,6 +39,136 @@
   color: #b2d234;
   border-radius: 9px;
   border: 1px;
+}
+
+/** MENU BURGER **/
+#menuIsOpen {
+  display: none;
+}
+#menuIsOpen:checked ~ #menu {
+  transform: translateX(0);
+}
+#menuIsOpen:checked ~ #menu #trigger-menu {
+  transform: translate(0);
+}
+#menuIsOpen:checked ~ #menu #trigger-menu:hover {
+  transform: translate(0) scale(1.2, 1.2);
+}
+#menuIsOpen:checked ~ #menu #trigger-menu svg path {
+  d: path("M15.854 12.854c-0-0-0-0-0-0l-4.854-4.854 4.854-4.854c0-0 0-0 0-0 0.052-0.052 0.090-0.113 0.114-0.178 0.066-0.178 0.028-0.386-0.114-0.529l-2.293-2.293c-0.143-0.143-0.351-0.181-0.529-0.114-0.065 0.024-0.126 0.062-0.178 0.114 0 0-0 0-0 0l-4.854 4.854-4.854-4.854c-0-0-0-0-0-0-0.052-0.052-0.113-0.090-0.178-0.114-0.178-0.066-0.386-0.029-0.529 0.114l-2.293 2.293c-0.143 0.143-0.181 0.351-0.114 0.529 0.024 0.065 0.062 0.126 0.114 0.178 0 0 0 0 0 0l4.854 4.854-4.854 4.854c-0 0-0 0-0 0-0.052 0.052-0.090 0.113-0.114 0.178-0.066 0.178-0.029 0.386 0.114 0.529l2.293 2.293c0.143 0.143 0.351 0.181 0.529 0.114 0.065-0.024 0.126-0.062 0.178-0.114 0-0 0-0 0-0l4.854-4.854 4.854 4.854c0 0 0 0 0 0 0.052 0.052 0.113 0.090 0.178 0.114 0.178 0.066 0.386 0.029 0.529-0.114l2.293-2.293c0.143-0.143 0.181-0.351 0.114-0.529-0.024-0.065-0.062-0.126-0.114-0.178z");
+}
+
+#menu {
+  display: none;
+  position: fixed;
+  background: #EEE;
+  width: 200px;
+  max-width: 95%;
+  height: 100%;
+  right: 0;
+  padding: ratio-space(2px);
+  transform: translateX(300px);
+  transition: transform 0.5s;
+}
+#menu #trigger-menu {
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: fixed;
+  right: 1.2em;
+  top: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: translate(-300px);
+}
+#menu #trigger-menu svg {
+  height: 100%;
+}
+#menu #trigger-menu svg path {
+  d: path("M1 3h14v3h-14zM1 7h14v3h-14zM1 11h14v3h-14z");
+}
+#menu #trigger-menu:hover {
+  transform: translate(-300px) scale(1.2, 1.2);
+}
+
+@media screen and (max-width: 400px) {
+  .header p {
+    display: none;
+  }
+  .header img {
+    width: 150px;
+  }
+  .header button {
+    display: none;
+  }
+  #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background-color: #fff;
+  }
+  #menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: #b2d234;
+    height: 100%;
+    width: 100%;
+    background: url("welcomesection.png");
+  }
+}
+.burger {
+  /** MENU BURGER **/
+}
+.burger #menuIsOpen {
+  display: none;
+}
+.burger #menuIsOpen:checked ~ #menu {
+  transform: translateX(0);
+}
+.burger #menuIsOpen:checked ~ #menu #trigger-menu {
+  transform: translate(0);
+}
+.burger #menuIsOpen:checked ~ #menu #trigger-menu:hover {
+  transform: translate(0) scale(1.2, 1.2);
+}
+.burger #menuIsOpen:checked ~ #menu #trigger-menu svg path {
+  d: path("M15.854 12.854c-0-0-0-0-0-0l-4.854-4.854 4.854-4.854c0-0 0-0 0-0 0.052-0.052 0.090-0.113 0.114-0.178 0.066-0.178 0.028-0.386-0.114-0.529l-2.293-2.293c-0.143-0.143-0.351-0.181-0.529-0.114-0.065 0.024-0.126 0.062-0.178 0.114 0 0-0 0-0 0l-4.854 4.854-4.854-4.854c-0-0-0-0-0-0-0.052-0.052-0.113-0.090-0.178-0.114-0.178-0.066-0.386-0.029-0.529 0.114l-2.293 2.293c-0.143 0.143-0.181 0.351-0.114 0.529 0.024 0.065 0.062 0.126 0.114 0.178 0 0 0 0 0 0l4.854 4.854-4.854 4.854c-0 0-0 0-0 0-0.052 0.052-0.090 0.113-0.114 0.178-0.066 0.178-0.029 0.386 0.114 0.529l2.293 2.293c0.143 0.143 0.351 0.181 0.529 0.114 0.065-0.024 0.126-0.062 0.178-0.114 0-0 0-0 0-0l4.854-4.854 4.854 4.854c0 0 0 0 0 0 0.052 0.052 0.113 0.090 0.178 0.114 0.178 0.066 0.386 0.029 0.529-0.114l2.293-2.293c0.143-0.143 0.181-0.351 0.114-0.529-0.024-0.065-0.062-0.126-0.114-0.178z");
+}
+.burger #menu {
+  position: fixed;
+  background: #EEE;
+  width: 300px;
+  max-width: 95%;
+  height: 100%;
+  right: 0;
+  padding: ratio-space(2px);
+  transform: translateX(300px);
+  transition: transform 0.5s;
+}
+.burger #menu #trigger-menu {
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: fixed;
+  right: 1.2em;
+  top: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: translate(-300px);
+}
+.burger #menu #trigger-menu svg {
+  height: 100%;
+}
+.burger #menu #trigger-menu svg path {
+  d: path("M1 3h14v3h-14zM1 7h14v3h-14zM1 11h14v3h-14z");
+}
+.burger #menu #trigger-menu:hover {
+  transform: translate(-300px) scale(1.2, 1.2);
 }
 
 .filter {
@@ -68,6 +204,18 @@
   font-style: italic;
 }
 
+@media screen and (max-width: 400px) {
+  .welcome {
+    margin-left: 20vw;
+  }
+  .welcome h1 {
+    text-align: center;
+    font-size: 56px;
+  }
+  .welcome p {
+    font-size: 24px;
+  }
+}
 .welcomeSection {
   position: relative;
   height: 100vh;
@@ -80,7 +228,7 @@
   }
 }
 .welcomeSection .bgimg {
-  width: 100vh;
+  width: 60vw;
   position: absolute;
   height: 100vh;
   right: 0;
@@ -134,6 +282,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 0;
+    text-align: center;
   }
   .welcomeSection .intro .Pzone {
     text-align: center;
@@ -207,8 +356,24 @@
     padding-bottom: 4vh;
   }
 }
+@media screen and (max-width: 400px) {
+  .AccrocheSection .AccrocheDiv {
+    width: 70vw;
+  }
+  .AccrocheSection .AccrocheDiv h2 {
+    font-size: 25px;
+  }
+  .AccrocheSection .AccrocheDiv p {
+    font-size: 12px;
+  }
+  .AccrocheSection .AccrocheDiv button {
+    font-size: 12px;
+    width: 25vw;
+  }
+}
 .MenuSection {
   height: auto;
+  padding-bottom: 10vh;
   background: url("pattern.png");
 }
 .MenuSection .MenuIntro {
@@ -308,7 +473,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-bottom: 50vh;
+    padding-bottom: 20vh;
   }
   .MenuSection .Produit {
     margin-left: 0;
@@ -325,12 +490,20 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 400px) {
+  .MenuSection {
+    padding-bottom: 35vh;
+  }
+  .MenuSection .commande h2 {
+    font-size: 35px;
+  }
+}
 .prepaSection {
   background: url("prep.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: auto;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -372,6 +545,17 @@
     flex-direction: column;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    height: auto;
+  }
+  .prepaSection .TxtDiv {
+    flex-direction: column;
+  }
+  .prepaSection h2 {
+    font-size: 22px;
+  }
+  .prepaSection p {
+    font-size: 12px;
+    margin-top: 4px;
   }
 }
 .formSection {
@@ -416,15 +600,15 @@
   margin-bottom: 2vh;
 }
 .formSection .form .nameFirstname {
-  gap: 2vw;
+  gap: 2.4vw;
   display: flex;
 }
 .formSection .form .nameFirstname input {
-  width: 24vw;
+  width: 19vw;
   height: 5vh;
 }
 .formSection .form .Sform input {
-  width: 100%;
+  width: 90%;
 }
 .formSection .form .Sform .email input {
   height: 5vh;
@@ -435,13 +619,16 @@
 .formSection .form button {
   width: 30%;
   height: 6vh;
-  margin-left: 35%;
+  margin-left: 30%;
   background-color: #b2d234;
   color: #fff;
   border: none;
   border-radius: 8px;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
+}
+.formSection .formImg img {
+  width: 50vw;
 }
 
 @media screen and (max-width: 900px) {
@@ -450,6 +637,19 @@
     height: auto;
     padding-top: 5vh;
     padding-bottom: 5vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .formSection .form button {
+    font-size: 12px;
+    width: 25vw;
+    margin-left: 15vw;
+  }
+  .formSection .form .formHeadline h2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
