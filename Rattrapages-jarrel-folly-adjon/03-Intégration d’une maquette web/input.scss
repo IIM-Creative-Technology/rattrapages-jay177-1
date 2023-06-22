@@ -108,7 +108,15 @@
   
   
   
+  @media screen and (max-width: 900px) {
+    .social{
+      img{
   
+  
+        left: 75vw;
+      }
+    }
+  } 
 @media screen and (max-width: 400px) {
   .header{
     p{
@@ -119,6 +127,13 @@
     }
     button{
       display: none;
+    }
+  }
+  .social{
+    img{
+
+
+      left: 55vw;
     }
   }
   #menu{
@@ -142,6 +157,7 @@
     }
   }
 }
+
 
 .burger{
 
@@ -241,6 +257,27 @@ $blue: #66CCFF;
     font-style: italic;
   }
 }
+@media screen and (max-width: 900px) {
+
+  .welcome {
+    margin-left: 20vw;
+
+
+    h1 {
+      text-align: center;
+      font-size: 76px;
+   
+    }
+  
+    p {
+      
+      display: none;
+     
+    }
+  
+}
+
+}
 @media screen and (max-width: 400px) {
 
     .welcome {
@@ -262,6 +299,7 @@ $blue: #66CCFF;
   }
   
 }
+
 
 .welcomeSection {
   position: relative;
@@ -565,7 +603,7 @@ $blue: #66CCFF;
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-bottom: 20vh;
+    padding-bottom: 55vh;
     .Produit{
       margin-left: 0;
     }
@@ -749,6 +787,7 @@ $blue: #66CCFF;
       border-radius: 8px;
       font-size: 24px;
       font-family: 'Poppins', sans-serif;
+      margin-top: 5vh;
     }
   }
   .formImg{
@@ -764,6 +803,9 @@ $blue: #66CCFF;
     height: auto;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    button{
+      width: 50%;
+    }
   }
 }
 @media screen and (max-width: 400px) {
@@ -782,6 +824,106 @@ $blue: #66CCFF;
           align-items: center;
         }
       }
+    }
+  }
+}
+
+footer{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+  background: #b2d234;
+  p{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  h2{
+    color: #fff;
+    font-size: 27px;
+    font-family: 'Poppins', sans-serif;
+  }
+  img{
+    width: 20vw;
+    height: 50%;
+    margin-left: 5vh;
+  }
+  .order{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    h2{
+      margin-bottom: 30px;
+    }
+    p{
+      margin-bottom: 15px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .info{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    h2{
+      margin-bottom: 30px;
+    }
+    p{
+      margin-bottom: 15px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footerSocial{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    h2{
+      margin-bottom: 30px;
+    }
+    p{
+      margin-bottom: 15px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 50vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    gap: 20px;
+    img{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 60vw;
+      height: 50%;
+    
+    }
+   
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  .order .info .footerSocial{
+    margin-bottom: 0px;
+    h2{
+      font-size: 18px;
+    }
+    p{
+      font-size: 12px;
     }
   }
 }
