@@ -434,6 +434,22 @@ $blue: #66CCFF;
     }
   }
 }
+.spanBorder{
+  position: absolute;
+  width: fit-content;
+  background-color: #b2d234;
+  padding: 5px;
+  margin-bottom: 10px;
+  right: -1px;
+  top: -2.1vw;
+  
+
+}
+#bestSale{
+  border: solid #b2d234 1px;
+  
+}
+
 
 @media screen and (max-width: 900px) {
   .AccrocheSection {
@@ -525,11 +541,24 @@ $blue: #66CCFF;
       font-size: 18px;
     }
   }
-
+  .ProductDiv{
+    margin-right: 8vw;
+  }
   .Produit {
-    width: 40vw;
+    width: fit-content;
     margin-left: 12vw;
     margin-top: 8vh;
+    position: relative;
+    h2{
+      padding-top: 10px;
+      padding-left: 10px;
+     
+    }
+    p{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
 
     .ProductName {
       display: flex;
