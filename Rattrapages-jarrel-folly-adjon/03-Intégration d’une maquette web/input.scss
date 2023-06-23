@@ -441,7 +441,10 @@ $blue: #66CCFF;
   padding: 5px;
   margin-bottom: 10px;
   right: -1px;
-  top: -2.1vw;
+  top: -3.1vh;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
   
 
 }
@@ -464,8 +467,18 @@ $blue: #66CCFF;
       justify-content: center;
       align-items: center;
       margin: auto;
-      height: 90vh;
+      height: 94vh;
       padding-bottom: 4vh;
+      width: 80vw;
+      h2{
+        font-size: 28px;
+      }
+      p{
+        font-size: 18px;
+      }
+      button{
+        width: 25vw;
+      }
       
       
       
@@ -546,26 +559,29 @@ $blue: #66CCFF;
   }
   .Produit {
     width: fit-content;
-    margin-left: 12vw;
+    margin-left: 8vw;
     margin-top: 8vh;
     position: relative;
-    h2{
-      padding-top: 10px;
-      padding-left: 10px;
-     
-    }
-    p{
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+    padding: 20px;
+    padding-right: 50px;
 
 
     .ProductName {
       display: flex;
-      gap: 10vw;
+  
       margin-bottom: 3vh;
       color: #b2d234;
       font-family: 'Poppins', sans-serif;
+      h2{
+        position: absolute;
+        right: 10px;
+      }
+      .name {
+        width: fit-content;
+        position: relative;
+        left: 0;
+      }
+     
     }
 
     .description {
@@ -579,9 +595,7 @@ $blue: #66CCFF;
       }
     }
 
-    .name {
-      width: 17vw;
-    }
+   
   }
 
   .vert {

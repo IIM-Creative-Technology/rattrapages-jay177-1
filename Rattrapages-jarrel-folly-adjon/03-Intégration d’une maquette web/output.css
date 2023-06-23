@@ -365,7 +365,10 @@
   padding: 5px;
   margin-bottom: 10px;
   right: -1px;
-  top: -2.1vw;
+  top: -3.1vh;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
 }
 
 #bestSale {
@@ -386,8 +389,18 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 90vh;
+    height: 94vh;
     padding-bottom: 4vh;
+    width: 80vw;
+  }
+  .AccrocheSection .AccrocheDiv h2 {
+    font-size: 28px;
+  }
+  .AccrocheSection .AccrocheDiv p {
+    font-size: 18px;
+  }
+  .AccrocheSection .AccrocheDiv button {
+    width: 25vw;
   }
 }
 @media screen and (max-width: 400px) {
@@ -445,24 +458,26 @@
 }
 .MenuSection .Produit {
   width: fit-content;
-  margin-left: 12vw;
+  margin-left: 8vw;
   margin-top: 8vh;
   position: relative;
-}
-.MenuSection .Produit h2 {
-  padding-top: 10px;
-  padding-left: 10px;
-}
-.MenuSection .Produit p {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 20px;
+  padding-right: 50px;
 }
 .MenuSection .Produit .ProductName {
   display: flex;
-  gap: 10vw;
   margin-bottom: 3vh;
   color: #b2d234;
   font-family: "Poppins", sans-serif;
+}
+.MenuSection .Produit .ProductName h2 {
+  position: absolute;
+  right: 10px;
+}
+.MenuSection .Produit .ProductName .name {
+  width: fit-content;
+  position: relative;
+  left: 0;
 }
 .MenuSection .Produit .description {
   font-size: 18px;
@@ -472,9 +487,6 @@
   .MenuSection .Produit .description {
     font-size: 12px;
   }
-}
-.MenuSection .Produit .name {
-  width: 17vw;
 }
 .MenuSection .vert {
   transform: rotate(-9deg);
