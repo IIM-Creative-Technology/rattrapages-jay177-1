@@ -116,9 +116,15 @@
         left: 75vw;
       }
     }
+    .header{
+      img{
+        margin-right: 4vh;
+      }
+    }
   } 
 @media screen and (max-width: 400px) {
   .header{
+    gap: 8vw;
     p{
       display: none;
     }
